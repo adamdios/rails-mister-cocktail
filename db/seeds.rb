@@ -14,3 +14,5 @@ Ingredient.create(name: "tequila")
 Ingredient.create(name: "orange juice")
 Ingredient.create(name: "whiskey")
 Ingredient.create(name: "sprite")
+
+Cocktail.create(name: "Bloody Mary")

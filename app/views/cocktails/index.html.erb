@@ -1,0 +1,23 @@
+<h1> Adam's Cocktails </h1>
+<div class="row">
+  <div class="col-sm-6">
+    <div class="card-deck d-flex justify-content-between">
+
+      <% @cocktails.each do |cocktail| %>
+      <div class="card text-center text-white bg-dark mb-3" style= "width: 18rem;">
+        <img class="card-img-top" src="..." alt="Card image">
+        <div class="card-body">
+          <h5 class="cocktail-name"><%= cocktail.name %></h5>
+
+          <%= link_to cocktail_path(cocktail), { class: "btn btn-primary" } do %>
+          <span class="label label-primary">View cocktail</span>
+          <% end %>
+        </div>
+      </div>
+      <% end %>
+    </div>
+  </div>
+</div>
+
+
+<!-- image_tag "logo.png", { class: "img-circle", id: "logo" } %> -->
